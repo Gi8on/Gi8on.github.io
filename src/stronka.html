@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Stronka</title>
+        <link href="./output.css" rel="stylesheet">
+    </head>
+    <body class="container bg-orange-100">
+        <header class="bg-pink-500">
+            <h1 class="text-8xl">Słodkie koty</h1>
+        </header>
+        <aside class="bg-gray-200 text-red-400 flex flex-col h-screen">
+            <h4 class="text-2xl text-red-600">tutaj jest nawigacja</h4>
+            <a href="#tabelka">tabelka</a>
+            <a href="#toposiedla">top4koty</a>
+            <a href="#ankieta">ankieta</a>
+            <a href="#interaktywna mapa">interaktywna mapa</a>
+            <a class="text-violet-900" href="#kotki">słodkie kotki</a>
+        </aside>
+        <main>
+            <article>
+                <h2 class="text-2xl">Tutaj jest nagłówek wielkości 2</h2>
+                <p>nie wiem co tu ma byc</p>
+            </article>
+            <table class="table-fixed " id="tabelka">
+                <caption>
+                    <h2>tabela</h2>
+                </caption>
+                <thead class="bg-zinc-600">
+                    <tr>
+                        <th>Kolumna1</th>
+                        <th>Kolumna2</th>
+                        <th>Kolumna3</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-emerald-400">
+                    <tr>
+                        <th>rzad1</th>
+                        <td>dasdfdsfsdfsdfdsfdsfsdfsdfne11</td>
+                        <td>dane12</td>
+                    </tr>
+                    <tr>
+                        <th>rzad2</th>
+                        <td>dane21</td>
+                        <td>dane22</td>
+                    </tr>
+                    <tr>
+                        <th>rzad3</th>
+                        <td>
+                            <em>dane31</em>
+                        </td>
+                        <td>dane32</td>
+                    </tr>
+                    <tr>
+                        <th>rzad4</th>
+                        <td>dane41</td>
+                        <td><a class="text-red-700" href="https://www.google.com/">dane42</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id = "topkoty">Top 4 koty:</h2>
+            <ol type = "i" class = "list-inside">
+                <li>każdy kot jest najlepszy</li>
+                <li>
+                    <strong>każdy kot jest najlepszy</strong>
+                </li>
+                <li class="text-green-700">każdy kot jest najlepszy</li>
+                <li>każdy kot jest najlepszy</li>
+            </ol>
+            <!--
+            <div class="shadow-2xl">
+                <img class="flex-none" src="https://img.projektn.sk/wp-static/2015/03/lunik20.jpg?w=990&h=660&fit=crop&fm=jpg&q=85" alt = "metropolia">
+            </div>-->
+            <div class="bg-zinc-400">
+                <h2 class="text-lg" id="ankietka"> ankietka: </h2>
+                <div class="grid-rows-6 grid-flow-col">
+                    <form action="" method="get" class="grid-rows-2 grid-flow-col">
+                        <div><label for="name"> imie twojego kota: </label></div>
+                        <div><input type="text" name="name" id="name" required class="rounded-md"></div>
+                    </form>
+                    <div><form action="" method="get" class="grid-rows-2 grid-flow-col">
+                        <div><label for="rasa"> rasa twojego kota: </label></div>
+                        <input type="rasa" name="rasa" id="rasa" required class="rounded-md">
+                    </form></div>
+                    <form action="" method="get">
+                        <label class="text-purple-900" for="wiek"> podaj nam wiek swojego kota</label>
+                        <select name="ile lat" id="wiek" class="rounded-md">
+                            <option value="">--wybierz wiek kota-</option>
+                            <option value="tyweww">1-9</option>
+                            <option value="ddd">10</option>
+                            <option value="costam1">10-49,4</option>
+                            <option value="costam">49,5 - 49,9</option>
+                            <option value="50do100">50 - 100</option>
+                            <option value="wiecej">wiecej</option>
+                        </select>
+                    </form>
+                    <form>
+                        <button class="animate-ping" type="button"><a href="https://download-a.akamaihd.net/files/media_publication/9b/bi12_P.pdf" download="kotek"> wcisnij mnie</a></button>
+                    </form>
+                </div>
+            </div>
+            <details>
+                <summary>tajne dane</summary>
+                Twoj adres ip zostal przekazany policji
+            </details>
+            <div class="bg-cyan-300">
+                <label for="przyjazd policji">Poziom słodkości:</label>
+                <progress id="file" max="50" value="70">70%</progress>
+            </div>
+            <h2 class="text-2xl" id="interaktywna mapa">interaktywna mapa Warszawy</h2>
+            <p>zobacz jak wyglada Warszawa na zdjeciach, wystarczy kliknac</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Warszawa_podzial_administracyjny_2002.svg/800px-Warszawa_podzial_administracyjny_2002.svg.png" usemap="#image_map">
+            <map name="image_map">
+            <area alt="cywilizacja" title="cywilizacja" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d26a519-f4a9-4786-aee3-512857c0481b/dfymple-95e6ad20-93e5-4480-800a-0edd5bd72db0.jpg/v1/fill/w_894,h_894,q_70,strp/future_metropolis_by_saralgam1980_dfymple-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzNkMjZhNTE5LWY0YTktNDc4Ni1hZWUzLTUxMjg1N2MwNDgxYlwvZGZ5bXBsZS05NWU2YWQyMC05M2U1LTQ0ODAtODAwYS0wZWRkNWJkNzJkYjAuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.zIBOpYwziOMAyfw7olIsxykleQv9wMb1QMTFVva5QCs" coords="234,609,574,828" shape="rect">
+            <area alt="koszyce1" title="koszyce1" href="https://radiokielce.pl/wp-content/uploads/2020/07/kopiec-wioska-neolityczna-z-czasow-panowania-kultury-pucharow-lejkowatych-20-142210.jpg" coords="11,2,235,1013" shape="rect">
+            <area alt="koszyce2" title="koszyce2" href="https://compassrose.pl/wp-content/uploads/2020/11/DSC_1416-3.jpg" coords="236,5,787,606" shape="rect">
+            </map>
+                <div class="flex flex-flow-row">
+                    <div><img src="catpic.jpg"></div>
+                    <div><img src="catpic.jpg"></div>
+                    <div><img src="catpic.jpg"></div>
+                </div>
+                <div class="flex flex-col">
+                    <div><img src="catpic.jpg"></div>
+                    <div><img src="catpic.jpg"></div>
+                    <div><img src="catpic.jpg"></div>
+                </div>
+        </main>
+
+        <footer>
+            autor to Marcin
+        </footer>
+      </body>
+</html>
