@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    ul, ol {
+      list-style: revert;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px, 1540px;
+    grid-template:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    padding: 10px;
+    grid-area: main;
+}
+
+footer {
+    font-size: 30px;
+    grid-area: footer;
+}
